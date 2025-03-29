@@ -51,6 +51,13 @@ install(TARGETS ${TARGET} RUNTIME)
 target_link_libraries(${TARGET} PRIVATE common llava ${CMAKE_THREAD_LIBS_INIT})
 target_compile_features(${TARGET} PRIVATE cxx_std_17)
 
+set(TARGET llama-qwen2vl-chat-cli)
+add_executable(${TARGET} qwen2vl-chat-cli.cpp)
+set_target_properties(${TARGET} PROPERTIES OUTPUT_NAME llama-qwen2vl-chat-cli)
+install(TARGETS ${TARGET} RUNTIME)
+target_link_libraries(${TARGET} PRIVATE common llava ${CMAKE_THREAD_LIBS_INIT})
+target_compile_features(${TARGET} PRIVATE cxx_std_17)
+
 set(TARGET llama-gemma3-cli)
 add_executable(${TARGET} gemma3-cli.cpp)
 set_target_properties(${TARGET} PROPERTIES OUTPUT_NAME llama-gemma3-cli)
