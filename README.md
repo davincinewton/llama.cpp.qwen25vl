@@ -1,3 +1,13 @@
+Fork from  HimariO's fork. Add llama-qwen2vl-chat-cli command, this command is a interactive chat model, input image by --image tag, 'exit' to exit the chat
+
+this commande support Qwen2.5 VL GGUF models such as: https://huggingface.co/samgreen/Qwen2.5-VL-32B-Instruct-GGUF
+
+run example:
+
+./llama-qwen2vl-chat-cli -m /media/yl/AI/downloads/Qwen25-VL-32B-Instruct-Q4_K_M.gguf --mmproj /media/yl/AI/downloads/qwen2.5-vl-32b-instruct-vision-f16.gguf -ngl 64
+
+after models loaded,press 'enter' 
+
 # llama.cpp
 
 ![llama](https://user-images.githubusercontent.com/1991296/230134379-7181e485-c521-4d23-a0d6-f7b3b61ba524.png)
